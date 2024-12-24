@@ -13,8 +13,10 @@
     "zod": "^3.23.8"
   },
   "scripts": {
-    "start": "tsc -b && node dist/index.js"
-  },
+    "start": "tsc -b && node dist/index.js",
+    "build": "tsc -b && prisma generate && prisma migrate deploy"
+}
+,
   "devDependencies": {
     "typescript": "^5.7.2"
   }
